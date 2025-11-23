@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import 'remixicon/fonts/remixicon.css';
+
+body {
+    color: #393e46;
+    font-family: "Lexend", sans-serif;
+}
