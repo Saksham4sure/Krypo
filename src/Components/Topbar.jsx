@@ -9,10 +9,10 @@ const Topbar = () => {
             </div>
             <div className='text-2xl flex gap-4 px-2'>
                 <button className='cursor-pointer'>
-                    <i class="ri-notification-4-line"></i>
+                    <i className="ri-notification-4-line"></i>
                 </button>
                 <button className='cursor-pointer'>
-                    <i class="ri-questionnaire-line"></i>
+                    <i className="ri-questionnaire-line"></i>
                 </button>
             </div>
         </div>

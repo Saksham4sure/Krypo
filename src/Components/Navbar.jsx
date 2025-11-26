@@ -9,7 +9,7 @@ const Navbar = () => {
       </div>
       <div className="flex flex-row sm:flex-col justify-around sm:gap-4">
         {navItems.map((items) => (
-          <Link to={items.Link} className='flex gap-4 items-center ' key={items}>
+          <Link to={items.Link} className='flex gap-4 items-center ' key={items.Link}>
             <i className={`${items.icon} text-3xl sm:text-xl`}></i>
             <h1 className='hidden sm:flex text-sm text-center font-light'>{items.name}</h1>
           </Link>
