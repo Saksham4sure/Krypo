@@ -1,6 +1,6 @@
-import React from 'react'
-import { transactions } from '../Index'
+import { budget, transactions } from '../Index'
 import TransactionTable from '../Components/TransactionTable'
+import Budget from '../Components/Budget'
 
 const Transactions = () => {
   return (
@@ -8,7 +8,6 @@ const Transactions = () => {
       <div className='w-full h-px my-4 bg-[#d4d4d4]'></div>
       <h1 className='px-2 text-2xl '>Transaction</h1>
       <div className='w-full h-px my-4 bg-[#d4d4d4]'></div>
-
       <div className='cursor-default'>
         <div className='flex'>
           <p className='border-y border-slate-300 px-2 border-x h-10 w-16 flex items-center justify-center'>S.N</p>
@@ -21,6 +20,15 @@ const Transactions = () => {
         <div>
           {transactions.map((detail, index) => (
             <TransactionTable key={index} detail={detail} />
+          ))}
+        </div>
+      </div>
+      <div className='w-full h-px my-4 bg-[#d4d4d4]'></div>
+      <h1 className='text-xl py-4 px-2 sm:px-4'>Budget Data</h1>
+      <div>
+        <div className='flex sm:px-6 md:justify-start items-center justify-center flex-wrap gap-2'>
+          {budget.map((budget) => (
+            <Budget budget={budget} />
           ))}
         </div>
       </div>

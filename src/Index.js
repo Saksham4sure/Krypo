@@ -43,7 +43,7 @@ export const transactions = [
         title: "Salary Payment",
         category: "Income",
         type: "income",
-        amount: 25000,
+        amount: 50000,
         date: "2025-11-02",
     },
     {
@@ -64,22 +64,14 @@ export const transactions = [
     },
     {
         id: 4,
-        title: "Freelance Design",
+        title: "Freelance",
         category: "Income",
         type: "income",
-        amount: 4500,
+        amount: 25000,
         date: "2025-11-06",
     },
     {
         id: 5,
-        title: "Taxi Ride",
-        category: "Transport",
-        type: "expense",
-        amount: 350,
-        date: "2025-11-07",
-    },
-    {
-        id: 6,
         title: "Netflix",
         category: "Subscription",
         type: "expense",
@@ -87,7 +79,7 @@ export const transactions = [
         date: "2025-11-08",
     },
     {
-        id: 7,
+        id: 6,
         title: "Groceries",
         category: "Food",
         type: "expense",
@@ -95,7 +87,7 @@ export const transactions = [
         date: "2025-11-10",
     },
     {
-        id: 8,
+        id: 7,
         title: "Gym Membership",
         category: "Health",
         type: "expense",
@@ -103,7 +95,7 @@ export const transactions = [
         date: "2025-11-11",
     },
     {
-        id: 9,
+        id: 8,
         title: "Dining Out",
         category: "Food",
         type: "expense",
@@ -111,11 +103,43 @@ export const transactions = [
         date: "2025-11-12",
     },
     {
-        id: 10,
+        id: 9,
         title: "Stock Dividend",
         category: "Income",
         type: "income",
         amount: 650,
         date: "2025-11-13",
     },
+    {
+        id: 10,
+        title: "Bike Servicing",
+        category: "Vehicle",
+        type: "expense",
+        amount: 1500,
+        date: "2025-11-13",
+    },
 ];
+
+export const budget = [
+    {
+        category: "Food",
+        limit: 8000,
+        spent: 6200
+    },
+    {
+        category: "Transport",
+        limit: 3000,
+        spent: 2350
+    },
+    {
+        category: "Bills",
+        limit: 5000,
+        spent: 4100
+    },
+    {
+        category: "Shopping",
+        limit: 6000,
+        spent: 2500
+    }
+]
+
