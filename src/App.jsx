@@ -5,6 +5,7 @@ import Account from "./Pages/Account"
 import Goals from "./Pages/Goals"
 import Transactions from "./Pages/Transactions"
 import Wallets from "./Pages/Wallets"
+import Topbar from "./Components/Topbar"
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
       <BrowserRouter>
       <Navbar />
+      <Topbar />
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/transactions" element={<Transactions />} />

@@ -5,7 +5,7 @@ const StockTrendCard = () => {
 
 
     return (
-        <div className="p-5 bg-[#EEEEEE] rounded-xl shadow-sm border border-[#E7E6E9] w-full max-w-md">
+        <div className="p-5 bg-[#EEEEEE] rounded-xl shadow-sm border border-[#E7E6E9] w-full min-w-[200px]">
             <div className="flex justify-between items-center mb-2">
                 <h2 className="text-sm font-light text-gray-600">Weekly Performance</h2>
                 <p className="text-xs font-semibold text-emerald-600">+12.4%</p>
