@@ -5,8 +5,8 @@ const MoneyBalance = () => {
 
 
     return (
-        <div className='relative mt-4 text-[#222222] w-full overflow-hidden h-44 md:h-36 rounded-xl border shadow-lg border-[#E7E6E9] p-5 flex flex-col md:flex-row items-start justify-between'>
-            <img className='absolute top-0 left-0 object-cover w-full h-full' src="/background.png" alt="background" />
+        <div className='relative mt-4 text-[#ffffff] bg-[#242424] w-full overflow-hidden h-44 md:h-36 rounded-xl border shadow-xs border-[#E7E6E9] p-5 flex flex-col md:flex-row items-start justify-between'>
+            {/* <img className='absolute top-0 left-0 object-cover w-full h-full' src="/background.png" alt="background" /> */}
             <div className='flex items-center w-full sm:w-[300px] z-10'>
                 <div className='flex flex-col cursor-pointer' onClick={() => setHidden(!hidden)}>
                     <div className='flex items-center gap-2 font-light'>
@@ -19,8 +19,8 @@ const MoneyBalance = () => {
                 </div>
             </div>
             <div className='flex sm:h-full gap-2 w-full sm:w-auto items-center sm:items-end justify-center z-10'>
-                <button className='border w-[120px] shadow-md py-2 cursor-pointer rounded-md text-[#222222] border-[#222222]'>Transfer <i class="ri-upload-line"></i></button>
-                <button className='w-[120px] shadow-md py-2 cursor-pointer rounded-md bg-[#222222] text-[#ffffff]'>Deposit <i class="ri-download-line"></i></button>
+                <button className='border w-[120px] shadow-md py-2 cursor-pointer rounded-md text-[#ffffff] border-[#cccccc]'>Transfer <i class="ri-upload-line"></i></button>
+                <button className='w-[120px] shadow-md py-2 cursor-pointer rounded-md bg-[#ffffff] text-[#242424]'>Deposit <i class="ri-download-line"></i></button>
             </div>
         </div>
     )

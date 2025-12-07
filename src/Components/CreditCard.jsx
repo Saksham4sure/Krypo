@@ -1,13 +1,13 @@
 import React from 'react'
 
-const CreditCard = ({ bankName, id, name, exp, img }) => {
+const CreditCard = ({ bankName, id, name, exp, img, icon }) => {
     return (
-        <div className='h-[200px] w-[330px] overflow-hidden flex px-4 py-3 relative rounded-3xl'>
-            <img className='absolute top-0 left-0 object-cover h-full w-full' src={img} alt="background" />
-            <div className='flex flex-col justify-between z-20 text-[#1D1D1F] w-full'>
+        <div className='h-[200px] w-[330px] cursor-default text-[#ffffff] bg-[#242424] overflow-hidden flex px-4 py-3 relative rounded-3xl'>
+            <img className='absolute top-0 left-0 object-cover h-full w-full' src={img} />
+            <div className='flex flex-col justify-between z-20 w-full'>
                 <div className='flex items-center pt-3 justify-between w-full'>
                     <h1 className='font-light'>{bankName}</h1>
-                    <i class="ri-bank-line"></i>
+                    <i className="ri-bank-line"></i>
                 </div>
                 <div>
                     <p className='text-xl'>{id}</p>
@@ -17,8 +17,8 @@ const CreditCard = ({ bankName, id, name, exp, img }) => {
                     <div className='font-light text-xs'>
                         <p>Exp {exp}</p>
                     </div>
-                    <div>
-                        <i class="ri-visa-line text-5xl"></i>
+                    <div className='text-4xl'>
+                        <i className={icon}></i>
                     </div>
                 </div>
             </div>
